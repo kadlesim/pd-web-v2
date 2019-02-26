@@ -23,7 +23,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "pd-web-v2-theme.scss"
             ],
             "scripts": [],
             "es5BrowserSupport": true
