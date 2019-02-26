@@ -24,7 +24,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "pd-web-v2-theme.scss"
+              "src/pd-web-v2-theme.scss"
             ],
             "scripts": [],
             "es5BrowserSupport": true

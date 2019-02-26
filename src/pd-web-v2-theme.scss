@@ -16,7 +16,7 @@ $pd-web-v2-accent:  mat-palette($mat-red);
 $pd-web-v2-warn:    mat-palette($mat-orange);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$pd-web-v2-theme: mat-light-theme(pd-web-v2-primary, $pd-web-v2-accent, $pd-web-v2-warn);
+$pd-web-v2-theme: mat-light-theme($pd-web-v2-primary, $pd-web-v2-accent, $pd-web-v2-warn);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
