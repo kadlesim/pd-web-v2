@@ -1,57 +1,62 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="over" role="navigation">
+    <!--this is a place for us to add side-nav code-->
+    <button mat-button (click)="sidenav.toggle()" id="sidenav-close-button"><mat-icon>close</mat-icon></button> <!--[matMenuTriggerFor]="menu"-->
+    <div id="sidenav-menu-div" (click)="sidenav.toggle()">
+      <nav>
+        <ul>
+          <li><a routerLink="" routerLinkActive="active"
+                 [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+          <li><a routerLink="event-list" routerLinkActive="active">Events</a></li>
+          <li><a routerLink="player-list" routerLinkActive="active">Team</a></li>
+          <li><a routerLink="result-list" routerLinkActive="active">Results</a></li>
+          <li><a routerLink="blog" routerLinkActive="active">Blog</a></li>
+          <li><a routerLink="media" routerLinkActive="active">Media</a></li>
+          <!--<li style="visibility: hidden">-->
+          <!--<a routerLink="login" routerLinkActive="active" *ngIf="!(isLoggedIn$ | async)">Sign In</a>-->
+          <!--<a routerLink="login" routerLinkActive="active" *ngIf="(isLoggedIn$ | async)">Sign Out</a>-->
+          <!--</li>-->
+        </ul>
+      </nav>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!--in here all the content must reside. We will add a navigation header as well-->
 
-<header>
-  <!--menu-->
-  <div id="header-menu-div">
-    <nav>
-      <ul>
-        <li><a routerLink="" routerLinkActive="active"
-               [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
-        <li><a routerLink="event-list" routerLinkActive="active">Events</a></li>
-        <li><a routerLink="player-list" routerLinkActive="active">Team</a></li>
-        <li><a routerLink="result-list" routerLinkActive="active">Results</a></li>
-        <li><a routerLink="blog" routerLinkActive="active">Blog</a></li>
-        <li><a routerLink="media" routerLinkActive="active">Media</a></li>
-        <!--<li style="visibility: hidden">-->
-        <!--<a routerLink="login" routerLinkActive="active" *ngIf="!(isLoggedIn$ | async)">Sign In</a>-->
-        <!--<a routerLink="login" routerLinkActive="active" *ngIf="(isLoggedIn$ | async)">Sign Out</a>-->
-        <!--</li>-->
-      </ul>
-    </nav>
-  </div>
-  <!--resposive menu?-->
-  <button mat-button [matMenuTriggerFor]="menu" id="header-menu-button">Menu</button>
-  <mat-menu class="mat-menu" #menu="matMenu">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
-  </mat-menu>
-
-  <!--<button class="mat-menu-item" mat-menu-item>pessss</button>-->
-
-  <!--<button mat-icon-button [matMenuTriggerFor]="menu">-->
-    <!--<mat-icon>more_vert</mat-icon>-->
-  <!--</button>-->
-  <!--<mat-menu #menu="matMenu">-->
-    <!--<button mat-menu-item>-->
-      <!--<mat-icon>dialpad</mat-icon>-->
-      <!--<span>Redial</span>-->
-    <!--</button>-->
-    <!--<button mat-menu-item disabled>-->
-      <!--<mat-icon>voicemail</mat-icon>-->
-      <!--<span>Check voicemail</span>-->
-    <!--</button>-->
-    <!--<button mat-menu-item>-->
-      <!--<mat-icon>notifications_off</mat-icon>-->
-      <!--<span>Disable alerts</span>-->
-    <!--</button>-->
-  <!--</mat-menu>-->
+    <header>
+      <!--menu-->
+      <div id="header-menu-div">
+        <nav>
+          <ul>
+            <li><a routerLink="" routerLinkActive="active"
+                   [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+            <li><a routerLink="event-list" routerLinkActive="active">Events</a></li>
+            <li><a routerLink="player-list" routerLinkActive="active">Team</a></li>
+            <li><a routerLink="result-list" routerLinkActive="active">Results</a></li>
+            <li><a routerLink="blog" routerLinkActive="active">Blog</a></li>
+            <li><a routerLink="media" routerLinkActive="active">Media</a></li>
+            <!--<li style="visibility: hidden">-->
+            <!--<a routerLink="login" routerLinkActive="active" *ngIf="!(isLoggedIn$ | async)">Sign In</a>-->
+            <!--<a routerLink="login" routerLinkActive="active" *ngIf="(isLoggedIn$ | async)">Sign Out</a>-->
+            <!--</li>-->
+          </ul>
+        </nav>
+      </div>
+      <button mat-button (click)="sidenav.toggle()" id="header-menu-button">Menu</button> <!--[matMenuTriggerFor]="menu"-->
+      <!--<mat-menu class="mat-menu" #menu="matMenu">-->
+        <!--<button mat-menu-item>Item 1</button>-->
+        <!--<button mat-menu-item>Item 2</button>-->
+      <!--</mat-menu>-->
 
 
-</header>
-<main>
-  <router-outlet></router-outlet>
-</main>
+    </header>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
 
-<footer>
+    <footer>
 
-</footer>
+    </footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
