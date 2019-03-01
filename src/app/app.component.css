@@ -27,23 +27,64 @@ mat-sidenav-content{
   font-size: 6vh;
 }
 
+#sidenav-menu-div a.active {
+  color: darkred;
+}
+
 #sidenav-close-button{
   width: 100vw;
   text-align: right;
 }
 #header-menu-button{
-  display: none;
+  /*display: none;*/
+  visibility: hidden;
+  color: white;
 }
 
-#header-menu-div{
-
+#header-menu-div a{
+  text-decoration: none;
+  color: white;
 }
 
+#header-menu-div a.active{
+  color: darkred;
+}
+
+#header-menu-div nav li{
+  display: inline-block;
+  margin-right: 2vw;
+}
+
+#header-menu-div ul {
+  padding: 0;
+}
+
+#header-logo-div img{
+  height: 7vh;
+  min-width: 10vw;
+  min-height: 42px;
+}
+
+#header-logo-div {
+  padding-right: 3vw;
+  display: inherit;
+}
+
+#header-spacer{
+  flex: 1 1 auto;
+}
+
+mat-toolbar{
+  height: 10vh;
+  min-height: 55px;
+  max-height: 100px;
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
   #header-menu-button{
     display: inline-block;
+    visibility: visible;
   }
   #header-menu-div{
     display: none;

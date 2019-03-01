@@ -20,6 +20,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 const appRoutes: Routes = [
   {
@@ -107,7 +108,8 @@ const appRoutes: Routes = [
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatToolbarModule
   ],
   providers: [
     EventListService
