@@ -80,6 +80,10 @@ mat-toolbar{
   max-height: 100px;
 }
 
+.mat-toolbar{
+  background-color: black;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
   #header-menu-button{
