@@ -1,4 +1,6 @@
-
+main{
+  color: black;
+}
 mat-sidenav{
   width: 100vw;
   height: 100vh;
@@ -61,7 +63,7 @@ mat-sidenav-content{
 
 #header-logo-div img{
   height: 7vh;
-  min-width: 10vw;
+  /*min-width: 10vw;*/
   min-height: 42px;
 }
 

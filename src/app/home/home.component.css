@@ -1,0 +1,33 @@
+#header-image-wrapper{
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  width: 100vw;
+  text-transform: uppercase;
+}
+
+.page-header-image{
+  width: 100%;
+
+}
+
+#image-heading-1{
+  position: absolute;
+  bottom: 109px;
+  right: 10px;
+  font-size: 13vw;
+}
+
+#image-heading-2{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 8vw;
+}
+
+svg {
+  /*width: 100%;*/
+  position: absolute;
+  bottom: 2vh;
+  right: 16px;
+}
