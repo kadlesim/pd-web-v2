@@ -1,33 +1,67 @@
 #header-image-wrapper{
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   z-index: -1;
   width: 100vw;
+  max-height: 60vh;
   text-transform: uppercase;
 }
 
 .page-header-image{
   width: 100%;
-
+  max-height: 60vh;
 }
 
 #image-heading-1{
   position: absolute;
-  bottom: 109px;
+  bottom: 5vh;
   right: 10px;
-  font-size: 13vw;
+  font-size: 4.8vw;
+  font-weight: 500;
+  font-family: "Beast Machine", fantasy;
 }
 
 #image-heading-2{
   position: absolute;
-  bottom: 10px;
+  bottom: 1.5vh;
   right: 10px;
-  font-size: 8vw;
+  font-size: 3.102vw;
+  font-weight: 500;
+  font-family: "Beast Machine", fantasy;
 }
 
-svg {
-  /*width: 100%;*/
-  position: absolute;
-  bottom: 2vh;
-  right: 16px;
+#image-heading-div{
+  width: 70vw;
+  height: 12vh;
+  position: relative;
+  bottom: 14vh;
+  left: 26vw;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  #image-heading-1{
+    bottom: 4vh;
+  }
+}
+
+/* Small devices 800px and up */
+@media only screen and (max-width: 800px) {
+  #image-heading-1{
+    bottom: 4vh;
+  }
+}
+/* Small devices 1100px and up */
+@media only screen and (min-width: 1100px) {
+  #image-heading-1{
+    bottom: 6vh;
+  }
+}
+
+/* Larger than 1400px  */
+@media only screen and (min-width: 1400px) {
+  #image-heading-1{
+    bottom: 7vh;
+  }
 }

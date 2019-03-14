@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Directive, ElementRef, HostListener, Renderer} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Prague Devils';
+
+  constructor(private el: ElementRef, private renderer: Renderer) {}
+
 }

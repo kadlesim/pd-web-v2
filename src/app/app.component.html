@@ -26,9 +26,9 @@
   <mat-sidenav-content>
     <!--in here all the content must reside. We will add a navigation header as well-->
 
-    <header>
+    <header id="shrinkable-header">
       <!--menu-->
-      <mat-toolbar color="primary">
+      <mat-toolbar color="primary" role="heading">
         <button mat-button (click)="sidenav.toggle()" id="header-menu-button">
           <mat-icon>menu</mat-icon>
         </button>
@@ -63,7 +63,8 @@
     </main>
 
     <footer>
-
+      <button mat-button id="footer-mail"><mat-icon>mail_outline</mat-icon> mail</button>
+      <button mat-button id="footer-fb"><mat-icon>thumb_up_alt</mat-icon> fb</button>
     </footer>
   </mat-sidenav-content>
 </mat-sidenav-container>

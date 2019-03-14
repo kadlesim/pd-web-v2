@@ -13,6 +13,15 @@ mat-sidenav-content{
   height: 100vh;
 }
 
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12);
+}
+
 #sidenav-menu-div{
   text-align: center;
 }
@@ -84,6 +93,15 @@ mat-toolbar{
 
 .mat-toolbar{
   background-color: black;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  /*position: absolute;*/
+  bottom: 0;
+  width: 100vw;
+  height: 10vh;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
