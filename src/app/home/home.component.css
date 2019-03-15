@@ -16,26 +16,31 @@
   position: absolute;
   bottom: 5vh;
   right: 10px;
-  font-size: 4.8vw;
+  font-size: 4.7vw;
   font-weight: 500;
   font-family: "Beast Machine", fantasy;
+  width: 69vw;
 }
 
 #image-heading-2{
   position: absolute;
   bottom: 1.5vh;
   right: 10px;
-  font-size: 3.102vw;
   font-weight: 500;
   font-family: "Beast Machine", fantasy;
+  font-size: 2.96vw;
+  width: 69vw;
 }
 
 #image-heading-div{
   width: 70vw;
   height: 12vh;
   position: relative;
-  bottom: 14vh;
+  bottom: 13vh;
   left: 26vw;
+  margin-bottom: -8vh;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 
@@ -44,6 +49,13 @@
   #image-heading-1{
     bottom: 4vh;
   }
+  #image-heading-1{
+    font-size: 4.4vw;
+  }
+
+  #image-heading-2{
+    font-size: 2.66vw;
+  }
 }
 
 /* Small devices 800px and up */
@@ -51,11 +63,29 @@
   #image-heading-1{
     bottom: 4vh;
   }
+  #image-heading-1{
+    font-size: 4.4vw;
+  }
+
+  #image-heading-2{
+    font-size: 2.66vw;
+  }
 }
 /* Small devices 1100px and up */
 @media only screen and (min-width: 1100px) {
   #image-heading-1{
     bottom: 6vh;
+  }
+  .main-section{
+  }
+}
+
+/* Small devices 1100px and up */
+@media only screen and (min-width: 1300px) {
+  #image-heading-1{
+    bottom: 6.5vh;
+  }
+  .main-section{
   }
 }
 
@@ -63,5 +93,7 @@
 @media only screen and (min-width: 1400px) {
   #image-heading-1{
     bottom: 7vh;
+  }
+  .main-section{
   }
 }

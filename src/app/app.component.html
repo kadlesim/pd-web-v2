@@ -28,16 +28,16 @@
 
     <header id="shrinkable-header">
       <!--menu-->
-      <mat-toolbar color="primary" role="heading">
-        <button mat-button (click)="sidenav.toggle()" id="header-menu-button">
-          <mat-icon>menu</mat-icon>
-        </button>
+      <mat-toolbar color="primary" role="heading" class="max-width">
         <div id="header-logo-div">
           <!--<a routerLink="">-->
             <img id="pd-logo" alt="PD Logo" src="./assets/bwLogo.png">
           <!--</a>-->
         </div>
         <span id="header-spacer"></span>
+        <button mat-button (click)="sidenav.toggle()" id="header-menu-button">
+          <mat-icon>menu</mat-icon>
+        </button>
         <div id="header-menu-div">
           <nav>
             <ul>
@@ -63,8 +63,10 @@
     </main>
 
     <footer>
-      <button mat-button id="footer-mail"><mat-icon>mail_outline</mat-icon> mail</button>
-      <button mat-button id="footer-fb"><mat-icon>thumb_up_alt</mat-icon> fb</button>
+      <nav class="max-width">
+        <button mat-button id="footer-mail"><mat-icon>mail_outline</mat-icon> mail</button>
+        <button mat-button id="footer-fb"><mat-icon>thumb_up_alt</mat-icon> fb</button>
+      </nav>
     </footer>
   </mat-sidenav-content>
 </mat-sidenav-container>

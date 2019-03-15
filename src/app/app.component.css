@@ -1,6 +1,8 @@
 main{
   color: black;
+  width: 100vw;
 }
+
 mat-sidenav{
   width: 100vw;
   height: 100vh;
@@ -10,7 +12,7 @@ mat-sidenav{
 }
 
 mat-sidenav-content{
-  height: 100vh;
+  /*height: 100vh;*/
 }
 
 header{
@@ -20,6 +22,7 @@ header{
   right: 0;
   z-index: 2;
   box-shadow: 0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12);
+  background-color: black;
 }
 
 #sidenav-menu-div{
@@ -46,6 +49,10 @@ header{
   width: 100vw;
   text-align: right;
 }
+#sidenav-close-button .mat-icon {
+  padding-right: 3vw;
+  padding-top: 2vh;
+}
 #header-menu-button{
   /*display: none;*/
   visibility: hidden;
@@ -70,6 +77,10 @@ header{
   padding: 0;
 }
 
+#header-menu-div {
+  padding-right: 4vw;
+}
+
 #header-logo-div img{
   height: 7vh;
   /*min-width: 10vw;*/
@@ -78,7 +89,9 @@ header{
 
 #header-logo-div {
   padding-right: 3vw;
+  padding-left: 3vw;
   display: inherit;
+  margin: 0;
 }
 
 #header-spacer{
@@ -89,6 +102,8 @@ mat-toolbar{
   height: 10vh;
   min-height: 55px;
   max-height: 100px;
+  margin: auto;
+  padding: 0;
 }
 
 .mat-toolbar{
@@ -109,8 +124,32 @@ footer{
   #header-menu-button{
     display: inline-block;
     visibility: visible;
+    padding-right: 4vw;
+  }
+  #header-menu-button .mat-icon {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 0.7;
+    padding-right: 1vw;
   }
   #header-menu-div{
     display: none;
+  }
+  #header-logo-div {
+    /*margin-left: 5vw;*/
+  }
+}
+
+/* Small devices 800px and up */
+@media only screen and (max-width: 800px) {
+  #header-logo-div {
+    /*margin-left: 4vw;*/
+  }
+}
+
+/* Small devices 1100px and up */
+@media only screen and (min-width: 1000px) {
+  #header-logo-div {
+    /*margin-left: 2vw;*/
   }
 }

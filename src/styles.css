@@ -11,3 +11,20 @@ body{
   font-family: "Beast Machine";
   src: url("assets/BEAST_MACHINES.TTF");
 }
+
+.max-width{
+  max-width: 964px;
+  margin: auto;
+}
+
+.main-section{
+  padding-right: 5vw;
+  padding-left: 6vw;
+  margin-bottom: 6vh;
+  text-align: justify;
+}
+
+.article-heading{
+  text-transform: uppercase;
+  font-size: 1.7rem;
+}
