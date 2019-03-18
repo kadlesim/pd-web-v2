@@ -1,6 +1,8 @@
 main{
   color: black;
   width: 100vw;
+  position: relative;
+  top: 9vh
 }
 
 mat-sidenav{
@@ -12,7 +14,8 @@ mat-sidenav{
 }
 
 mat-sidenav-content{
-  /*height: 100vh;*/
+  min-height: 100vh;
+  overflow: inherit;
 }
 
 header{
