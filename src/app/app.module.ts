@@ -21,6 +21,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   {
@@ -52,7 +53,7 @@ const appRoutes: Routes = [
     path: 'event-list',
     component: EventListComponent,
     resolve: {
-      // events: EventsResolver
+      // pageData: EventListResolverService
     }
   },
   {
@@ -109,7 +110,8 @@ const appRoutes: Routes = [
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule
   ],
   providers: [
     EventListService

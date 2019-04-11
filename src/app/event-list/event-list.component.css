@@ -1,0 +1,107 @@
+.page-header-image{
+  width: 100%;
+  max-height: 60vh;
+}
+
+#image-heading-1{
+  position: absolute;
+  bottom: 1vh;
+  right: 10px;
+  font-size: 4vw;
+  font-weight: 500;
+  font-family: "Beast Machine", fantasy;
+  width: 69vw;
+  margin-right: 3vw;
+}
+
+#image-heading-div{
+  /*width: 70vw;*/
+  height: 12vh;
+  position: relative;
+  bottom: 13vh;
+  /*left: 26vw;*/
+  margin-bottom: -8vh;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: right;
+}
+
+#event-table{
+  grid-area: eventtable;
+  width: 100%;
+  padding-bottom: 10vh;
+  /*margin-right: 0;*/
+  /*padding-right: 15vw;*/
+  /*background-color: dimgray;*/
+}
+thead{
+  letter-spacing: .2rem;
+  text-align: left;
+  line-height: 2em;
+}
+tbody tr{
+  line-height: 1.7em;
+  letter-spacing: .1rem;
+}
+
+tbody tr:nth-child(odd) {
+  background-color:rgba(0, 0, 0, 0.2);
+}
+
+tbody td{
+  padding-left: 3px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  #image-heading-1{
+    bottom: 4vh;
+  }
+  #image-heading-1{
+    font-size: 4.4vw;
+  }
+
+  #image-heading-2{
+    font-size: 2.66vw;
+  }
+}
+
+/* Small devices 800px and up */
+@media only screen and (max-width: 800px) {
+  #image-heading-1{
+    bottom: 4vh;
+  }
+  #image-heading-1{
+    font-size: 4.4vw;
+  }
+
+  #image-heading-2{
+    font-size: 2.66vw;
+  }
+}
+/* Small devices 1100px and up */
+@media only screen and (min-width: 1100px) {
+  #image-heading-1{
+    bottom: 6vh;
+  }
+  .main-section{
+  }
+}
+
+/* Small devices 1100px and up */
+@media only screen and (min-width: 1300px) {
+  #image-heading-1{
+    bottom: 6.5vh;
+  }
+  .main-section{
+  }
+}
+
+/* Larger than 1400px  */
+@media only screen and (min-width: 1400px) {
+  #image-heading-1{
+    bottom: 7vh;
+  }
+  .main-section{
+  }
+}

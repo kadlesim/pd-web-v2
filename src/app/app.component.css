@@ -2,7 +2,8 @@ main{
   color: black;
   width: 100vw;
   position: relative;
-  top: 9vh
+  top: 9vh;
+  padding-bottom: 20vh;
 }
 
 mat-sidenav{
@@ -81,7 +82,7 @@ header{
 }
 
 #header-menu-div {
-  padding-right: 4vw;
+  /*padding-right: 4vw;*/
 }
 
 #header-logo-div img{
@@ -116,7 +117,7 @@ mat-toolbar{
 footer{
   background-color: black;
   color: white;
-  /*position: absolute;*/
+  position: absolute;
   bottom: 0;
   width: 100vw;
   height: 10vh;
@@ -156,3 +157,5 @@ footer{
     /*margin-left: 2vw;*/
   }
 }
+
+
